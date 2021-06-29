@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* El # se usa para id y el . para class */
+
+body{
+    margin: 0;
+    font-family: 'IBM Plex Sans', sans-serif; font-family: 'Montserrat', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{ 
+    width: 100%;
+    height: 100vh;
+    background: url(../img/bg-header.png);
+    background-size: cover;
+}
+.container  {
+    width: 850px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#menu ul li{
+    display: inline-block;
+    margin: 0 13px;
+}
+#menu ul li a{
+    color: #ffffff;
+    font-size: 22px;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    transition: .5s;
+}
+#menu ul li a:hover{
+    color: #e8f00c;
+    border-bottom: 3px solid #e8f00c;
+}
+#hero {
+   text-align: center;
+   padding-top: 100px; 
+}
+#hero h1 {
+    color: #e8f00c;
+    font-size: 55px;
+    margin: 0;
+}
+#hero h3 {
+    color: #ffffff;
+    font-size: 20px;
+    margin: 0;
+}
+#hero button {
+    background: #e8f00c;
+    color: #999999;
+    font-size: 30px;
+    border-radius: 10px;
+    margin-top: 100px;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    transition: .4s;
+}
+#hero button:hover{
+    background: #ffffff;
+}
+#planes{
+    background-color: #ffffff;
+    width: 100%;
+    position: relative;
+    padding-top: 25px;
+    padding-bottom:70px;
+    text-align: center;
+}
+#planes h2{
+    font-size: 50px;
+}
+#planes p{
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+#planes .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#planes .row .item-planes{
+    padding: 10px;
+    position: relative;
+    transition: .4s;
+}
+#planes .row .item-planes:hover {
+    padding: 10px;
+    position: relative;
+    box-shadow: 0px 0px 9px 0px #c4c4c4;
+}
+#planes .row .item-planes img{
+    transition: .4s;
+}
+#planes .row .item-planes:hover img{
+    border-radius: 50%;
+
+}
+#planes .row .item-planes h3{
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    right: 0px;
+    font-size: 22px;
+    color: #e8f00c;
+    transition: .4s;
+}
+#planes .row .item-planes:hover h3{
+    color: #ffffff;
+}
+#destinos{
+    width: 100%;
+    background: url(../img/bg-destinos.png);
+    background-size: cover;
+    text-align: center;
+    padding-top: 75px;
+    padding-bottom: 40px;
+    position: relative;
+}
+#destinos h2{
+    font-size: 50px;
+    color: #e8f00c;
+    margin-bottom: 85px;
+}
+#destinos .row{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+#destinos .row .item-destinos{
+    position: relative;
+}
+#destinos .row .item-destinos h3{
+    font-size: 23px;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 45px;
+    transition: .4s;
+}
+#destinos .row .item-destinos:hover h3{
+    color: #e8f00c;
+}
+#destinos .row .item-destinos img{
+    transition: .4s;
+}
+#destinos .row .item-destinos:hover img{
+    transform: scale(1.13);
+}
+#contacto {
+    background-color: #e8f00c;
+    background-size: cover;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 120px;
+}
+#contacto h2 {
+    font-size: 50px;
+    margin-bottom: 30px; 
+}
+#contacto p{
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+#contacto .row {
+    margin-top: 35px;
+}
+#contacto .row .campob {
+    width: 300px;
+    padding: 12px;
+    margin: 0 15px;
+    border-radius: 3px;
+    border: 2px solid #999999;
+}
+#contacto .row select {
+    width: 326px !important;
+    color: #696666;
+}
+#contacto form button {
+    padding: 10px  50px;
+    font-size: 18px;
+    margin-top: 50px;
+    background: #898d0e;
+    color: #ffffff;
+    border-radius: 5px;
+    border: transparent;
+}
+footer {
+    background: #000000;
+    color:#ffffff;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 55px;
+}
